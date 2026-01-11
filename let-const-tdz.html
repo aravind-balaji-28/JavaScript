@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let-const-tdz</title>
+</head>
+
+<body>
+    <script>
+        console.log(a)  //ReferenceError: Cannot access 'a' before initialization
+        let a = 10 // (TDZ Error)
+        console.log(b) // ReferenceError: b is not defined
+
+        // let a =25;  //SyntaxError: Identifier 'a' has already been declared
+        // console.log(a)
+
+        // const c; // SyntaxError: Missing initializer in const declaration
+        // console.log(c)
+
+        // const d = 10  //TypeError: Assignment to constant variable.
+        // d = 20
+        // console.log(d)
+
+    </script>
+
+</body>
+
+</html>
