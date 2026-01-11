@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoisting</title>
+</head>
+
+<body>
+  <script>
+
+    // Note
+    // What is Hoisting?
+
+    // Hoisting is the JavaScript engine’s behavior of allocating memory for variable and function declarations during the creation phase of the execution context, before the code is executed.
+
+    console.log(a);
+    getName();
+    var a = 10;
+    function getName() {
+      console.log('Javascript Hoisting!')
+    }
+
+    // How to check how hoisting works
+    // Check the scope in the Sources tab (Inspect)
+
+  </script>
+</body>
+
+</html>
