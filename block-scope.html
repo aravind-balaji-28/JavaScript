@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Notes
+        // 1. Block
+        // A block is a piece of code wrapped inside curly braces
+        // 2.Block Scope
+        // let and const are block-scoped accessible only inside the block
+        // 3.Shadowing
+        // inner variable overrides outer variable using lexical scope
+
+        //1.Block
+        //wrong 
+        if (false) console.log('a'); console.log('b');
+
+        //    Note:Js Read 
+        //    if(false){
+        //     console.log('a')
+        //    }
+        //    console.lof('b')
+
+        //correct
+        // if (false) {
+        //     console.log('a');
+        //     console.log('b');
+        // }
+
+        // 2.Block Scope
+        // {
+        //     var a = 10;
+        //     let b = 20;
+        //     const c = 30;
+        // }
+        // console.log(a)
+        // console.log(b) // ReferenceError: b is not defined
+        // console.log(c)
+
+        // 3.Shadowing
+
+        // let b = 10
+
+        // if (true) {
+        //     var a = 20;
+        //     let b = 30;
+        //     const c = 50;
+        //     console.log(b)
+        // }
+
+        // console.log(b)
+    </script>
+
+</body>
+
+</html>
